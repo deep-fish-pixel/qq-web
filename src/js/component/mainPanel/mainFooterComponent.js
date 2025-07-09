@@ -16,8 +16,8 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.MainFooterComponent',
 		if(Sharp.getSystem().ie)
 		{
 			mainMenuSharp = Sharp('<div class="footer_service_pic4 noselect moveover2" title="主菜单">'
-            +'<div><img class="footer_main_pic" src="../css/pic/Res/Mine/switch_multi_hover-2.gif"> </img></div>'
-            +'<div style="position: absolute;"><img class="footer_main_pic_hover" src="../css/pic/Res/Mine/TaskbarIcon-DiscussChatFrame-2.gif"> </img></div>'
+            +'<div><img class="footer_main_pic" src="./css/pic/Res/Mine/switch_multi_hover-2.gif"> </img></div>'
+            +'<div style="position: absolute;"><img class="footer_main_pic_hover" src="./css/pic/Res/Mine/TaskbarIcon-DiscussChatFrame-2.gif"> </img></div>'
             +'</div>').addTo(tdFirst);
 			var mainPics = mainMenuSharp.find("img");
 			var mainPicFirst = mainPics.get(0);
@@ -35,44 +35,44 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.MainFooterComponent',
 		else
 		{
 			mainMenuSharp = Sharp('<div class="footer_service_pic2 noselect moveover2" title="主菜单">'
-            +'<div><img class="footer_main_pic" src="../css/pic/Res/Mine/switch_multi_hover-2.gif"> </img></div>'
-            +'<div style="position: absolute;"><img class="footer_main_pic_hover" src="../css/pic/Res/Mine/TaskbarIcon-DiscussChatFrame-2.gif"> </img></div>'
+            +'<div><img class="footer_main_pic" src="./css/pic/Res/Mine/switch_multi_hover-2.gif"> </img></div>'
+            +'<div style="position: absolute;"><img class="footer_main_pic_hover" src="./css/pic/Res/Mine/TaskbarIcon-DiscussChatFrame-2.gif"> </img></div>'
             +'</div>').addTo(tdFirst);
 		}
 
         var serviceStr = '<div class="footer_other_service">'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1 float_right" src="../css/pic/Res/MainPanel/AppBox/appbox_mgr_btn.png" title="打开应用管理器"/>'
-                    +'<img class="footer_service_pic noselect moveover1" src="../css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1001/16.png" title="手机生活"/>'
-					+'<img class="footer_service_pic noselect moveover1" src="../css/pic/Res/AppPluginIcon/main_gamebtn20_game.png" title="QQ游戏"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/AppPluginIcon/main_musicbtn20_music.png" title="QQ音乐"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1005/16.png" title="腾讯视频"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1006/16.png" title="QQ团购"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/AppFramework/Safe/PCMgr_Installed.png" title="腾讯电脑专家"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1040/16.png" title="QQ备忘录"/></div>';
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1 float_right" src="./css/pic/Res/MainPanel/AppBox/appbox_mgr_btn.png" title="打开应用管理器"/>'
+                    +'<img class="footer_service_pic noselect moveover1" src="./css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1001/16.png" title="手机生活"/>'
+					+'<img class="footer_service_pic noselect moveover1" src="./css/pic/Res/AppPluginIcon/main_gamebtn20_game.png" title="QQ游戏"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/AppPluginIcon/main_musicbtn20_music.png" title="QQ音乐"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1005/16.png" title="腾讯视频"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1006/16.png" title="QQ团购"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/AppFramework/Safe/PCMgr_Installed.png" title="腾讯电脑专家"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/MainPanel/AppCenter/Data/AppIcon/1040/16.png" title="QQ备忘录"/></div>';
         var firstServices = Sharp(serviceStr).addTo(tdSecond);
 		
 		serviceStr = '<div class="footer_other_service">'
-					+'<div class="footer_service_pic3 noselect margin_left5 moveover1 float_right" title="打开应用中心"><img class="footer_service_pic noselect" src="../css/pic/Res/MainPanel/QPlusEntranceBtn.png"/><div>应用</div></div>'
-					+'<img class="footer_service_pic noselect moveover1" src="../css/pic/Res/MainPanel/Button/Tools.png" title="打开系统设置"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/MainPanel/Button/message.png" title="打开消息管理器"/>'
-                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="../css/pic/Res/MainPanel/Button/filemanager.png" title="打开文件管理器"/>'
-                    +'<div class="footer_service_pic3 noselect margin_left5 moveover1" title="查找联系人"><img class="footer_service_pic noselect" src="../css/pic/Res/AppFramework/Misc/find.png"/><div>查找</div></div></div>';
+					+'<div class="footer_service_pic3 noselect margin_left5 moveover1 float_right" title="打开应用中心"><img class="footer_service_pic noselect" src="./css/pic/Res/MainPanel/QPlusEntranceBtn.png"/><div>应用</div></div>'
+					+'<img class="footer_service_pic noselect moveover1" src="./css/pic/Res/MainPanel/Button/Tools.png" title="打开系统设置"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/MainPanel/Button/message.png" title="打开消息管理器"/>'
+                    +'<img class="footer_service_pic noselect margin_left5 moveover1" src="./css/pic/Res/MainPanel/Button/filemanager.png" title="打开文件管理器"/>'
+                    +'<div class="footer_service_pic3 noselect margin_left5 moveover1" title="查找联系人"><img class="footer_service_pic noselect" src="./css/pic/Res/AppFramework/Misc/find.png"/><div>查找</div></div></div>';
         var secondServices = Sharp(serviceStr).addTo(tdThird);
 		var self = this;
 		tdFirst.click(function()
         {			if(!self.mainMenuSharp)
 			{
 				self.mainMenuData = [
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/mainmenu_allservices.png",text:"所有服务",children:true,click:function(){}},
-					{pic:"../css/pic/Data/Misc/VAS/VasBizIcon/118/0.png",text:"QQ会员",children:true,click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/mainmenu_imqqcom.png",text:"我的QQ中心",line:true,click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/Tools.png",text:"工具",children:true,click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/OnlineUpdate.png",text:"软件升级",line:true,click:function(){}},
-					{pic:"../css/pic/Res/AppFramework/Safe/QQSafe.png",text:"安全中心",children:true,click:function(){}},
-					{pic:"../css/pic/Res/MainHelp/menu_help.png",text:"帮助",children:true,line:true,click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/mainmenu_allservices.png",text:"所有服务",children:true,click:function(){}},
+					{pic:"./css/pic/Data/Misc/VAS/VasBizIcon/118/0.png",text:"QQ会员",children:true,click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/mainmenu_imqqcom.png",text:"我的QQ中心",line:true,click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/Tools.png",text:"工具",children:true,click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/OnlineUpdate.png",text:"软件升级",line:true,click:function(){}},
+					{pic:"./css/pic/Res/AppFramework/Safe/QQSafe.png",text:"安全中心",children:true,click:function(){}},
+					{pic:"./css/pic/Res/MainHelp/menu_help.png",text:"帮助",children:true,line:true,click:function(){}},
 	
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/ContactMgr.png",text:"好友管理器",click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/menu_changepswd.png",text:"修改密码",click:function(currentMenuSharp)
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/ContactMgr.png",text:"好友管理器",click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/menu_changepswd.png",text:"修改密码",click:function(currentMenuSharp)
 					{
 						if(this.pic)
 						{
@@ -80,18 +80,18 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.MainFooterComponent',
 						}
 						else
 						{
-							this.pic = "../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png";
+							this.pic = "./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png";
 						}
 					}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/menu_switch.png",text:"更改用户",click:function(){}},
-					{pic:"../css/pic/Res/lockPanel/lock20.png",text:"锁定QQ",click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/menu_exit.png",text:"退出",click:function(){}}
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/menu_switch.png",text:"更改用户",click:function(){}},
+					{pic:"./css/pic/Res/lockPanel/lock20.png",text:"锁定QQ",click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/menu_exit.png",text:"退出",click:function(){}}
 				];	
 				self.mainMenuData[0].children=[
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/TencentNet.png",text:"腾讯网",click:function(){}},
-					{pic:"../css/pic/Res/MainHelp/ProductBlog.PNG",text:"QQ空间",click:function(){}},
-					{pic:"../css/pic/Res/ChatFrame/Buddy/Profile/paipai_16.png",text:"拍拍购物",line:true,click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/SoSo.png",text:"SOSO搜索",click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/TencentNet.png",text:"腾讯网",click:function(){}},
+					{pic:"./css/pic/Res/MainHelp/ProductBlog.PNG",text:"QQ空间",click:function(){}},
+					{pic:"./css/pic/Res/ChatFrame/Buddy/Profile/paipai_16.png",text:"拍拍购物",line:true,click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/SoSo.png",text:"SOSO搜索",click:function(){}},
 					{text:"QQ充值",children:[
 							{text:"充值Q币/Q点",click:function(){}},
 							{text:"开通包月服务",children:[
@@ -154,7 +154,7 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.MainFooterComponent',
 							{text:"QQ飞车",click:function(){}},
 							{text:"逆战",click:function(){}}
 						],click:function(){}},
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/mainmenu_allservices.png",text:"手机生活",children:[
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/mainmenu_allservices.png",text:"手机生活",children:[
 							{text:"超级QQ",click:function(){}},
 							{text:"手机QQ",click:function(){}},
 							{text:"应用宝",click:function(){}},
@@ -164,7 +164,7 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.MainFooterComponent',
 							{text:"腾讯手机管家",click:function(){}}
 						],click:function(){}},
 	
-					{pic:"../css/pic/Res/MainPanel/MainMenuFrame/TencentNet.png",text:"新闻资讯",children:[
+					{pic:"./css/pic/Res/MainPanel/MainMenuFrame/TencentNet.png",text:"新闻资讯",children:[
 							{text:"订阅新闻",click:function(){}},
 							{text:"我的资讯",line:true,click:function(){}},
 							{text:"新闻频道",click:function(){}},

@@ -26,7 +26,7 @@ WebChat.Ext.panel.FramePanel.extend('WebChat.Ext.panel.LoginFramePanel',
 		
 		this.initLogin();
 		var task = this.container.getTask()
-		this.taskInfo.pic = '../css/pic/Res/Misc/TaskbarIcon-DiscussChatFrame.png';
+		this.taskInfo.pic = './css/pic/Res/Misc/TaskbarIcon-DiscussChatFrame.png';
 		if(task)task.add(this.taskInfo);
 	},
     initLogin:function()
@@ -39,8 +39,8 @@ WebChat.Ext.panel.FramePanel.extend('WebChat.Ext.panel.LoginFramePanel',
 		else if(date>=14 & date<18)videoName='afternoon';
 		else videoName='night';
 		
-		var video = Sharp('<video id="video" src="../css/general/pic/'+videoName+'.mp4"  autoplay="autoplay" class="login_video login_'+videoName+'" parentdragable="true"></video>');
-		//var video = Sharp('<video id="video" autoplay class="login_video login_'+videoName+'" parentdragable="true"><source src="../css/general/pic/'+'kk236 2013-12-03 15-14-27'+'.mp4"/></video>');
+		var video = Sharp('<video id="video" src="./css/general/pic/'+videoName+'.mp4"  autoplay loop muted class="login_video login_'+videoName+'" parentdragable="true"></video>');
+		//var video = Sharp('<video id="video" autoplay class="login_video login_'+videoName+'" parentdragable="true"><source src="./css/general/pic/'+'kk236 2013-12-03 15-14-27'+'.mp4"/></video>');
 		video.addTo(this.content);
 		this.content.addClass('login_'+videoName);
 		this.content.add('<table parentdragable="true" class="head_table_info margin_left5 head_table_'+videoName+'">'
@@ -92,8 +92,8 @@ WebChat.Ext.panel.FramePanel.extend('WebChat.Ext.panel.LoginFramePanel',
 		
 		var tds = this.content.find(".head_table_info").find("td");
 		var headPic = Sharp(tds.elements[0]);
-		var headPicContent = Sharp('<img class="head_picture" src="../css/pic/Data/Head/1_100.gif"/>').addTo(headPic);
-		var loginStatus = Sharp('<div class="login_status_set"><img class="login_status_set_pic" src="../css/pic/Res/Status/FLAG/Big/imonline.png"></div>').addTo(headPic);
+		var headPicContent = Sharp('<img class="head_picture" src="./css/pic/Data/Head/1_100.gif"/>').addTo(headPic);
+		var loginStatus = Sharp('<div class="login_status_set"><img class="login_status_set_pic" src="./css/pic/Res/Status/FLAG/Big/imonline.png"></div>').addTo(headPic);
 		var recordChecks = this.content.find(".record_check");
 		recordChecks.iter(function(check)
 		{
@@ -106,12 +106,12 @@ WebChat.Ext.panel.FramePanel.extend('WebChat.Ext.panel.LoginFramePanel',
 		});
 		
 		var statusMenus = [
-			{pic:"../css/pic/Res/Status/FLAG/Big/imonline.png",text:"我在线上",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.onlineStauts;}},
-			{pic:"../css/pic/Res/Status/FLAG/Big/Qme.png",text:"Q我吧",line:true,click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.freeStatus;}},
-			{pic:"../css/pic/Res/Status/FLAG/Big/away.png",text:"离开",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.goawayStatus;}},
-			{pic:"../css/pic/Res/Status/FLAG/Big/busy.png",text:"忙碌",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.busyStatus;}},
-			{pic:"../css/pic/Res/Status/FLAG/Big/mute.png",text:"请勿打扰",line:true,click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.notFazeStatus;}},
-			{pic:"../css/pic/Res/Status/FLAG/Big/invisible.png",text:"隐身",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.hideStauts;}}
+			{pic:"./css/pic/Res/Status/FLAG/Big/imonline.png",text:"我在线上",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.onlineStauts;}},
+			{pic:"./css/pic/Res/Status/FLAG/Big/Qme.png",text:"Q我吧",line:true,click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.freeStatus;}},
+			{pic:"./css/pic/Res/Status/FLAG/Big/away.png",text:"离开",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.goawayStatus;}},
+			{pic:"./css/pic/Res/Status/FLAG/Big/busy.png",text:"忙碌",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.busyStatus;}},
+			{pic:"./css/pic/Res/Status/FLAG/Big/mute.png",text:"请勿打扰",line:true,click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.notFazeStatus;}},
+			{pic:"./css/pic/Res/Status/FLAG/Big/invisible.png",text:"隐身",click:function(){loginStatus.find(".login_status_set_pic").attr("src",this.pic);self.loginStatus = WebChat.Ext.panel.LoginFramePanel.hideStauts;}}
 		];	
 		loginStatus.click(function()
         {

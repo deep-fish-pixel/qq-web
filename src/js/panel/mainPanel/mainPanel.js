@@ -31,11 +31,11 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 		var friendSetting= this.settings.friendSetting;
 		var groupSetting= this.settings.groupSetting;
 		
-		mainTabPanel.add("", "../css/pic/Themes/Default/MainPanel/icon_contacts_normal.png","../css/pic/Themes/Default/MainPanel/icon_contacts_selected.png","联系人",function(parent, tabName, tabPic, titleName)
+		mainTabPanel.add("", "./css/pic/Themes/Default/MainPanel/icon_contacts_normal.png","./css/pic/Themes/Default/MainPanel/icon_contacts_selected.png","联系人",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'"><img class="tab_pic" src="'+ tabPic +'"/>'
-					+'<div class="tab_name">'+(tabName?tabName:'')+'</div>'+'<div class="down_array" onmousedown="return false;" style="right: 80%;"><img class="down_array_pic" src="../css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"/></div></div>').addTo(parent);
+					+'<div class="tab_name">'+(tabName?tabName:'')+'</div>'+'<div class="down_array" onmousedown="return false;" style="right: 80%;"><img class="down_array_pic" src="./css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"/></div></div>').addTo(parent);
 			var trigger = tabLi.children(".down_array");
 			var self = mainTabPanel;
 			if(friendSetting.showBigHeader)this.units[0].context.addClass("friend_big_panel");
@@ -51,51 +51,51 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 				else window.event.cancelBubble = true; 
 				trigger.addClass("down_array_click");
 				var mainMenuData = [
-					{pic:"../css/pic/Res/MainPanel/menu/modehead.png",text:"头像显示",click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/menu/modehead.png",text:"头像显示",click:function(){}},
 					{pic:"",text:"名称显示"},
 					{pic:"",text:"列表显示",line:true,click:function(){}},
 					{pic:"",text:"排序显示",click:function(){}},
 					{pic:"",text:"刷新好友列表",line:true,click:function(){}},
 					{pic:"",text:"显示在线联系人",line:true,click:function(){}},
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示企业分组",click:function(){}},
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示陌生人分组",click:function(){}},
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示黑名单",click:function(){}}
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示企业分组",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示陌生人分组",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示黑名单",click:function(){}}
 				];	
 				mainMenuData[0].children=[
-					{pic:(friendSetting.showBigHeader?"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"大头像",click:function()
+					{pic:(friendSetting.showBigHeader?"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"大头像",click:function()
 					{
 						self.units[0].context.addClass("friend_big_panel");
 						self.units[0].friendContentTab.scrollerfixed();
 						friendSetting.showBigHeader=true;
 					}},
-					{pic:(friendSetting.showBigHeader?"":"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png"),text:"小头像",line:true,click:function()
+					{pic:(friendSetting.showBigHeader?"":"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png"),text:"小头像",line:true,click:function()
 					{
 						self.units[0].context.removeClass("friend_big_panel");
 						friendSetting.showBigHeader=false;
 						self.units[0].friendContentTab.scrollerfixed();
 					}},
-					{pic:(friendSetting.selectedShowBigPic?"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"选中时显示大头像",line:true,click:function()
+					{pic:(friendSetting.selectedShowBigPic?"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"选中时显示大头像",line:true,click:function()
 					{
 						friendSetting.selectedShowBigPic=!friendSetting.selectedShowBigPic;
 						if(friendSetting.selectedShowBigPic)friendContentPanel.context.addClass("friend_item_selected");
 						else friendContentPanel.context.removeClass("friend_item_selected");
 						self.units[0].friendContentTab.scrollerfixed();
 					}},
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示我的头像",click:function(){}}
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示我的头像",click:function(){}}
 				];
 				mainMenuData[1].children=[
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示备注和昵称",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示备注和昵称",click:function(){}},
 					{pic:"",text:"显示备注",line:true,click:function(){}},
 					{pic:"",text:"显示昵称",click:function(){}}
 				];
 				mainMenuData[2].children=[
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"单列显示",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"单列显示",click:function(){}},
 					{pic:"",text:"多列平铺",line:true,click:function(){}},
 					{pic:"",text:"显示清爽资料",line:true,click:function(){}},
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"动画效果",click:function(){}}
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"动画效果",click:function(){}}
 				];
 				mainMenuData[3].children=[
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"按身份标识排序",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"按身份标识排序",click:function(){}},
 					{pic:"",text:"按服务更新排序",line:true,click:function(){}},
 					{pic:"",text:"按名称排序",line:true,click:function(){}}
 				];
@@ -139,11 +139,11 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 				}
 			 }
 		});
-		mainTabPanel.add("", "../css/pic/Themes/Default/MainPanel/icon_group_normal.png","../css/pic/Themes/Default/MainPanel/icon_group_selected.png","群/讨论组",function(parent, tabName, tabPic, titleName)
+		mainTabPanel.add("", "./css/pic/Themes/Default/MainPanel/icon_group_normal.png","./css/pic/Themes/Default/MainPanel/icon_group_selected.png","群/讨论组",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'"><img class="tab_pic" src="'+ tabPic +'"/>'
-					+'<div class="tab_name">'+(tabName?tabName:'')+'</div>'+'<div class="down_array" style="right: 60%;"><img class="down_array_pic" src="../css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"/></div></div>').addTo(parent);
+					+'<div class="tab_name">'+(tabName?tabName:'')+'</div>'+'<div class="down_array" style="right: 60%;"><img class="down_array_pic" src="./css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"/></div></div>').addTo(parent);
 			var trigger = tabLi.children(".down_array");
 			var self = mainTabPanel;
 			if(friendSetting.showBigHeader)this.units[0].context.addClass("friend_big_panel");
@@ -157,7 +157,7 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 			{
 				trigger.addClass("down_array_click");
 				var mainMenuData = [
-					{pic:"../css/pic/Res/MainPanel/menu/modehead.png",text:"图标显示",click:function(){}},
+					{pic:"./css/pic/Res/MainPanel/menu/modehead.png",text:"图标显示",click:function(){}},
 					{pic:"",text:"列表显示",line:true},
 					{pic:"",text:"访问我的群主页",click:function(){}},
 					{pic:"",text:"所有群消息设置",line:true,click:function(){}},
@@ -166,19 +166,19 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 					{pic:"",text:"添加群分组",click:function(){}},
 				];
 				mainMenuData[0].children=[
-					{pic:(groupSetting.showBigHeader?"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"大图标",click:function()
+					{pic:(groupSetting.showBigHeader?"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"大图标",click:function()
 					{
 						self.units[1].context.addClass("group_big_panel");
 						self.units[1].groupContentTab.scrollerfixed();
 						groupSetting.showBigHeader=true;	
 					}},
-					{pic:(!groupSetting.showBigHeader?"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"小图标",line:true,click:function()
+					{pic:(!groupSetting.showBigHeader?"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"小图标",line:true,click:function()
 					{						
 						self.units[1].context.removeClass("group_big_panel");
 						groupSetting.showBigHeader=false;
 						self.units[1].groupContentTab.scrollerfixed();
 					}},
-					{pic:(groupSetting.selectedShowBigPic?"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"选中时显示大图标",click:function()
+					{pic:(groupSetting.selectedShowBigPic?"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png":""),text:"选中时显示大图标",click:function()
 					{
 						groupSetting.selectedShowBigPic=!groupSetting.selectedShowBigPic;
 						if(groupSetting.selectedShowBigPic)groupContentPanel.context.addClass("group_item_selected");
@@ -187,13 +187,13 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 					}}
 				];
 				mainMenuData[1].children=[
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"单列显示",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"单列显示",click:function(){}},
 					{pic:"",text:"多列平铺",line:true,click:function(){}},
 					{pic:"",text:"动画效果",click:function(){}}
 				];
 				mainMenuData[3].children=[
 					{pic:"",text:"接收并提示消息",click:function(){}},
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"不提示消息只显示数目",line:true,click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"不提示消息只显示数目",line:true,click:function(){}},
 					{pic:"",text:"屏蔽群消息提示",click:function(){}}
 				];
 				mainMenuData[3].children[2].children=[
@@ -242,31 +242,31 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.MainPanel',
 				}
 			 }
 		});
-		mainTabPanel.add("", "../css/pic/Themes/Default/MainPanel/icon_last_normal.png","../css/pic/Themes/Default/MainPanel/icon_last_selected.png","会话",function(parent, tabName, tabPic, titleName)
+		mainTabPanel.add("", "./css/pic/Themes/Default/MainPanel/icon_last_normal.png","./css/pic/Themes/Default/MainPanel/icon_last_selected.png","会话",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'"><img class="tab_pic" src="'+ tabPic +'"/>'
-					+'<div class="tab_name">'+(tabName?tabName:'')+'</div>'+'<div class="down_array" style="right: 40%;"><img class="down_array_pic" src="../css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"/></div></div>').addTo(parent);
+					+'<div class="tab_name">'+(tabName?tabName:'')+'</div>'+'<div class="down_array" style="right: 40%;"><img class="down_array_pic" src="./css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"/></div></div>').addTo(parent);
 			var trigger = tabLi.children(".down_array");
 			trigger.click(function(event)
 			{
 				trigger.addClass("down_array_click");
 				var mainMenuData = [
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"漫游会话列表",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"漫游会话列表",click:function(){}},
 					{pic:"",text:"清空会话列表"}
 				];
 				new WebChat.Ext.Component.MenuComponent(Sharp('<div class="component menu_component"></div>'), mainTabPanel, mainMenuData, trigger, 130, "down_array_click");
 			});
 			return tabLi;	
 		});
-		mainTabPanel.add("", "../css/pic/Themes/Default/MainPanel/icon_group_normal.png","群/讨论组");
-		mainTabPanel.add("", "../css/pic/Themes/Default/MainPanel/icon_contacts_normal.png","联系人");
+		mainTabPanel.add("", "./css/pic/Themes/Default/MainPanel/icon_group_normal.png","群/讨论组");
+		mainTabPanel.add("", "./css/pic/Themes/Default/MainPanel/icon_contacts_normal.png","联系人");
 		var friendContentPanel = new WebChat.Ext.Panel.MainTabContentFriendPanel(Sharp('<div class="panel main_tab_panel friend_panel noselect" id="friend_panel"></div>'), mainTabPanel, mainTabPanel.tabsData.length,friendSetting);
-		friendContentPanel.addData([{name:"同学",friends:[{showName:"农民1",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/1.png"},{showName:"农民2",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/2.png"},{showName:"农民3",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/5.png"},{showName:"农民4",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/33.png"},{showName:"农民5",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民6",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民7",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民8",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民9",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民10",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"},{showName:"农民11",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民12",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民13",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民14",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民15",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"}]},{name:"陌生人",friends:[{showName:"农民16",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民17",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民18",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民19",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民20",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"},{showName:"农民21",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民22",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民23",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民24",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民25",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"},{showName:"农民26",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民27",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民28",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民29",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民30",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"}]}]);
+		friendContentPanel.addData([{name:"同学",friends:[{showName:"农民工1",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/1.png"},{showName:"农民工2",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/2.png"},{showName:"农民工3",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/5.png"},{showName:"农民工4",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/33.png"},{showName:"农民工5",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工6",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工7",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工8",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工9",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工10",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"},{showName:"农民工11",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工12",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工13",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工14",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工15",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"}]},{name:"陌生人",friends:[{showName:"农民工16",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工17",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工18",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工19",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工20",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"},{showName:"农民工21",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工22",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工23",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工24",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工25",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"},{showName:"农民工26",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工27",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工28",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工29",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工30",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"}]}]);
 		
 		var groupContentPanel = new WebChat.Ext.Panel.MainTabContentGroupPanel(Sharp('<div class="main_tab_group_panel noselect" id="friend_panel"></div>'), mainTabPanel, mainTabPanel.tabsData.length,friendSetting);
-		groupContentPanel.addData([{name:"我的qq群",groups:[{showName:"南京以恒软件",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件2",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件3",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件4",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件5",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"}]},
-		{name:"不常用群",groups:[{showName:"南京以恒软件",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件2",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件3",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件4",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"},{showName:"南京以恒软件5",nickName:"南京",sign:"杨慧在群动态中1张图片",shortPic:"../css/pic/Data/Misc/normal_group_40.png"}]}]);
+		groupContentPanel.addData([{name:"我的qq群",groups:[{showName:"研发",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发2",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发3",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发4",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发5",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"}]},
+		{name:"不常用群",groups:[{showName:"研发",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发2",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发3",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发4",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"},{showName:"研发5",nickName:"研发",sign:"杨慧在群动态中1张图片",shortPic:"./css/pic/Data/Misc/normal_group_40.png"}]}]);
 		var groupContent = groupContentPanel.groupContentTab.children();
 		groupContentPanel.groupContentTab.scroller({dragstart:function()
 		{

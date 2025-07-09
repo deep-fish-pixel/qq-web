@@ -172,9 +172,9 @@ WebChat.Ext.Panel.ChartPanel.extend('WebChat.Ext.Panel.ChartPanelManage',
 		random = Math.round(Math.random()*100);
 		var self = this;
 		this.taskInfo.name="XXX"+random;
-		this.taskInfo.pic="../css/pic/Data/Head/2.png";
+		this.taskInfo.pic="./css/pic/Data/Head/2.png";
 		
-		var tabData = this.tabData = {tabName:"XXX"+random, tabPic:"../css/pic/Data/Head/2.png", tabSelectedPic:"../css/pic/Data/Head/2.png",tabSelectedClass:"tab_content_select", titleName:"XXX"+random, createTabFunc:function(parent, tabName, tabPic, titleName,data, index)
+		var tabData = this.tabData = {tabName:"XXX"+random, tabPic:"./css/pic/Data/Head/2.png", tabSelectedPic:"./css/pic/Data/Head/2.png",tabSelectedClass:"tab_content_select", titleName:"XXX"+random, createTabFunc:function(parent, tabName, tabPic, titleName,data, index)
 		{
 			var tabLi = Sharp('<div class="tab_content'+(data.tabSelectedClass?" "+data.tabSelectedClass:"")+'" '+(titleName?' title="'+titleName+'"':'')+' dragable="true"><div class="tab_content_inner" parentdragable="true"><div class="tab_pic_div" parentdragable="true"><img class="tab_pic" src="'+ tabPic +'" parentdragable="true"/></div>'
 					+'<div class="tab_name" parentdragable="true" unselectable="on">'+(tabName?tabName:'')+'</div><div class="tab_delete"></div></div></div>').addTo(parent);

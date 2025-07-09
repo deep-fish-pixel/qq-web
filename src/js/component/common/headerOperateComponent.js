@@ -52,19 +52,19 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.HeaderOperateComponent',
 			close:{title:"关闭","class":"close",pic1:"../css/general/pic/btn_close_normal.png",click:this.callback("close")},
 			min:{title:"最小化","class":"min",pic1:"../css/general/pic/btn_mini_normal.png",click:this.callback("setMin")},
 			max:{title:"最大化","class":"max",pic1:"../css/general/pic/btn_max_normal.png",click:this.callback("_setMax", task[0])},
-			chartSet:{title:"设置","class":"chart_set",pic1:"../css/pic/Res/ChatFrame/AIO_SetBtn_normal.png",click:function()
+			chartSet:{title:"设置","class":"chart_set",pic1:"./css/pic/Res/ChatFrame/AIO_SetBtn_normal.png",click:function()
 					{
 						var menuData=[
 						{pic:"",text:"保持窗口最前",click:function(){}},
-						{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"合并会话窗口",line:true,click:function(){}},
-						{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示自己的皮肤",click:function(){}},
+						{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"合并会话窗口",line:true,click:function(){}},
+						{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示自己的皮肤",click:function(){}},
 						{pic:"",text:"皮肤管理",line:true,click:function(){}},
 						{pic:"",text:"更多设置",click:function(){}}
 						];
 						new WebChat.Ext.Component.MenuComponent(Sharp('<div class="component menu_component"></div>'), self, menuData, this.fireElement, 130);
 					}},
-			skinSet:{title:"更改外观","class":"skin_set",pic1:"../css/pic/Res/MainPanel/Button/btn_Skin_normal.png",click:function(){}},
-			loginSet:{title:"设置","class":"login_set",pic1:"../css/pic/Res/LoginUI/btn_set_normal.png",click:function(){}}
+			skinSet:{title:"更改外观","class":"skin_set",pic1:"./css/pic/Res/MainPanel/Button/btn_Skin_normal.png",click:function(){}},
+			loginSet:{title:"设置","class":"login_set",pic1:"./css/pic/Res/LoginUI/btn_set_normal.png",click:function(){}}
 		}
 		this.types = [];
     },

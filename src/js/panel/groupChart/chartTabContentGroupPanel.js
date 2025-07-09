@@ -2,7 +2,7 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 {
 	initChartHeader: function(chartHeaderContent)
 	{
-		this.headerTable = Sharp('<table class="chart_friend_header_table" parentdragable="true"><tr class="friend_info_tr" parentdragable="true"><td rowspan=2 class="friend_pic_td"  parentdragable="true"><div class="friend_pic_div" parentdragable="true"><img class="friend_pic" src="../css/pic/Data/Misc/normal_group_40.png"/></div></td><td class="friend_nick_td" colspan=2 parentdragable="true"><a class="friend_nick" href="javascript:void(0)">高三（九）班'+random+'</a></td></tr><tr class="friend_sign_tr"><td colspan=2 class="friend_sign_td" parentdragable="true"><div class="friend_sign select" selected="true">同事.朋友-同学</div></td></tr><tr class="chart_others_func_tr" parentdragable="true"><td colspan=3 class="chart_funcs chart_funcs_group" parentdragable="true"><div class="chart_funcs_content" parentdragable="true"></div></td></table>').addTo(chartHeaderContent);
+		this.headerTable = Sharp('<table class="chart_friend_header_table" parentdragable="true"><tr class="friend_info_tr" parentdragable="true"><td rowspan=2 class="friend_pic_td"  parentdragable="true"><div class="friend_pic_div" parentdragable="true"><img class="friend_pic" src="./css/pic/Data/Misc/normal_group_40.png"/></div></td><td class="friend_nick_td" colspan=2 parentdragable="true"><a class="friend_nick" href="javascript:void(0)">高三（九）班'+random+'</a></td></tr><tr class="friend_sign_tr"><td colspan=2 class="friend_sign_td" parentdragable="true"><div class="friend_sign select" selected="true">同事.朋友-同学</div></td></tr><tr class="chart_others_func_tr" parentdragable="true"><td colspan=3 class="chart_funcs chart_funcs_group" parentdragable="true"><div class="chart_funcs_content" parentdragable="true"></div></td></table>').addTo(chartHeaderContent);
 		
 	},
 	initChartCore: function(chartHeaderContent)
@@ -47,11 +47,11 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 			{pic:"",text:"QQ举报",click:function(){}}
 		],sendPic:[
 			{pic:"",text:"发送本地图片",click:function(){}},
-			{pic:"../css/pic/Res/MainHelp/ProductBlog.PNG",text:"从QQ空间相册选图"}
+			{pic:"./css/pic/Res/MainHelp/ProductBlog.PNG",text:"从QQ空间相册选图"}
 		],printscreen:[
 			{pic:"",text:"屏幕截图CTRL+ALT+A",click:function(){}},
-			{pic:"../css/pic/Res/AppFramework/Camera/DynaCapture/TipDlgTitleImage_Movie.png",text:"录制视频动画"},
-			{pic:"../css/pic/Res/AppFramework/Camera/DynaCapture/TipDlgTitleImage_Image.png",text:"捕捉视频图像",line:true},
+			{pic:"./css/pic/Res/AppFramework/Camera/DynaCapture/TipDlgTitleImage_Movie.png",text:"录制视频动画"},
+			{pic:"./css/pic/Res/AppFramework/Camera/DynaCapture/TipDlgTitleImage_Image.png",text:"捕捉视频图像",line:true},
 			{pic:"",text:"显示截图编辑工具栏"},
 			{pic:"",text:"截图时隐藏当前窗口"}
 		],messageManage:[
@@ -81,7 +81,7 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 			{pic:"",text:"更换群图标"},
 			{pic:"",text:"群消息设置",children:[
 			{pic:"",text:"自动弹出消息",click:function(){}},
-			{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"接收并提示消息"},
+			{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"接收并提示消息"},
 			{pic:"",text:"不提示消息只显示数目"},
 			{pic:"",text:"屏蔽群消息提示",line:true,children:[
 							{pic:"",text:"15分钟提示一次",click:function(){}},
@@ -94,7 +94,7 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 					{pic:"",text:"设置屏蔽时关注内容"}
 				]},
 			{pic:"",text:"视图设置",line:true,click:function(){},children:[
-					{pic:"../css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示侧边",click:function(){}},
+					{pic:"./css/pic/Res/Misc/AddBuddy/Icon_FolderAuthFalse.png",text:"显示侧边",click:function(){}},
 					{pic:"",text:"本窗口总在最前"}
 				]},
 			{pic:"",text:"成员管理"},
@@ -123,7 +123,7 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 		var groupContentTabPanel = this.groupContentTabPanel = new WebChat.Ext.Panel.GroupContentTabPanel(Sharp('<div class="tab_content_group_panel noselect" parentdragable="true"></div>'), this, 3,{parentdragable:true,content:chartHeaderContent});
 		
 		
-		groupContentTabPanel.add("聊天", "../css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b24m0_0.png","聊天",function(parent, tabName, tabPic, titleName)
+		groupContentTabPanel.add("聊天", "./css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b24m0_0.png","聊天",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'"/>'
@@ -134,7 +134,7 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 			
 			
 		});
-		groupContentTabPanel.add("空间", "../css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b25m0_0.png","空间",function(parent, tabName, tabPic, titleName)
+		groupContentTabPanel.add("空间", "./css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b25m0_0.png","空间",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'"/>'
@@ -145,7 +145,7 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 			
 			
 		});
-		groupContentTabPanel.add("应用", "../css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b26m0_0.png","应用",function(parent, tabName, tabPic, titleName)
+		groupContentTabPanel.add("应用", "./css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b26m0_0.png","应用",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'"/>'
@@ -157,8 +157,8 @@ WebChat.Ext.Panel.ChartTabContentPanel.extend('WebChat.Ext.Panel.ChartTabContent
 			
 		});
 		var panelContentTabs= this.chartFuncsContent.find(".panel_content_tabs");
-		var func1 = Sharp('<div class="friend_func2" title="创建讨论组"><div class="func_pic_context2"><div class="func_pic_content"><img class="func_pic" src="../css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b27m0_0.png"></div></div></div>').addTo(panelContentTabs);
-		var func2 = Sharp('<div class="friend_func" title="开启语音会话"><div class="func_pic_context"><div class="func_pic_content"><img class="func_pic" src="../css/pic/Res/ChatFrame/Group/Icons/TopToolbar/aio_toobar_tool.png"></div></div><div class="down_array_context"><div class="down_array"><img class="down_array_pic" src="../css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"></div></div></div>').addTo(panelContentTabs);
+		var func1 = Sharp('<div class="friend_func2" title="创建讨论组"><div class="func_pic_context2"><div class="func_pic_content"><img class="func_pic" src="./css/pic/Res/ChatFrame/Group/Icons/TopToolbar/b27m0_0.png"></div></div></div>').addTo(panelContentTabs);
+		var func2 = Sharp('<div class="friend_func" title="开启语音会话"><div class="func_pic_context"><div class="func_pic_content"><img class="func_pic" src="./css/pic/Res/ChatFrame/Group/Icons/TopToolbar/aio_toobar_tool.png"></div></div><div class="down_array_context"><div class="down_array"><img class="down_array_pic" src="./css/pic/Res/AppFramework/FileAssitant/batchoper_btndown.png"></div></div></div>').addTo(panelContentTabs);
 		var func2DownArray = func2.find(".down_array_context");
 		func2.find(".down_array_context").click(function()
 		{

@@ -135,6 +135,6 @@
 	},
 	addOutputStamp:function(isSelf)
 	{
-		this.inputDiv.add('<div style="'+(isSelf?'color:#008040':'color:#0000FF')+';min-height:20px;font-size: 10pt;line-height: 2;padding-left: 5px;" selected="true" class="select" value="'+Sharp.dateFormat(new Date(),"yyyy-MM-dd hh:mm:ss")+'">'+"马卫 "+Sharp.dateFormat(new Date(),"hh:mm:ss")+'</div>');
+		this.inputDiv.add('<div style="'+(isSelf?'color:#008040':'color:#0000FF')+';min-height:20px;font-size: 10pt;line-height: 2;padding-left: 5px;" selected="true" class="select" value="'+Sharp.dateFormat(new Date(),"yyyy-MM-dd hh:mm:ss")+'">'+"张三 "+Sharp.dateFormat(new Date(),"hh:mm:ss")+'</div>');
 	}
 });

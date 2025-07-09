@@ -375,7 +375,7 @@
 			if(htmlStr.indexOf("/css/pic/Data/Face/")!=-1)
 			{
 				var a = htmlStr.match(/(src="[\w|:|\\|\/ ]*\/css\/pic\/Data\/Face\/)+/g);
-				htmlStr = htmlStr.replace(/src="[\w|:|\\|\/ ]*\/css\/pic\/Data\/Face\//g, 'src="../css/pic/Data/Face/');
+				htmlStr = htmlStr.replace(/src="[\w|:|\\|\/ ]*\/css\/pic\/Data\/Face\//g, 'src="./css/pic/Data/Face/');
 			}
 			elements = Sharp(htmlStr).elements;
 			
@@ -480,7 +480,7 @@
 			var package;
 			if(src.indexOf('css/pic/Data/Face/') != -1)
 			{
-				src = src.replace(/[\w|:|\\|\/ ]*\/css\/pic\/Data\/Face\//, '../css/pic/Data/Face/');
+				src = src.replace(/[\w|:|\\|\/ ]*\/css\/pic\/Data\/Face\//, './css/pic/Data/Face/');
 				package = ('<img src="'+ src +'"></img>');
 			}
 			else

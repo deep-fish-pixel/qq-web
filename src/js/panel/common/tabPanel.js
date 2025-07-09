@@ -42,7 +42,7 @@ WebChat.Base.Panel.extend('WebChat.Ext.Panel.TabPanel',
 		else
 		{
 			var tabLi = Sharp('<div class="tab_content'+(this.tabsData[tabIndex].tabSelectedClass?" "+this.tabsData[tabIndex].tabSelectedClass:"")+'"'+(titleName?' title="'+titleName+'"':'')
-			+(this.settings.noSetWidth?"":' style="width:'+this.getTabWidth(1)+'">')+'<img class="tab_pic" src="../tabPanel/'+ tabPic +'"/>'
+			+(this.settings.noSetWidth?"":' style="width:'+this.getTabWidth(1)+'">')+'<img class="tab_pic" src="'+ tabPic +'"/>'
 					+'<div class="tab_name">'+(tabName?tabName:'')+'</div></div>').addTo(this.tabParent);	
 			
 			tabLi.index = tabIndex;

@@ -17,7 +17,7 @@
 		var facesTabPanel = this.facesTabPanel = new WebChat.Ext.Panel.FacesTabPanel(Sharp('<div class="faces_tab_panel noselect" parentdragable="true"></div>'), this, 4,{noSetWidth:true});
 		
 		
-		facesTabPanel.add("", "../css/pic/Res/AppFramework/CustomFace/StoreFace/classic_page_focus.png","默认",function(parent, tabName, tabPic, titleName)
+		facesTabPanel.add("", "./css/pic/Res/AppFramework/CustomFace/StoreFace/classic_page_focus.png","默认",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'"/>'
@@ -29,7 +29,7 @@
 			
 		});
 		
-		facesTabPanel.add("", "../css/pic/Res/AppFramework/CustomFace/StoreFace/sys2_page_focus.png","生活",function(parent, tabName, tabPic, titleName)
+		facesTabPanel.add("", "./css/pic/Res/AppFramework/CustomFace/StoreFace/sys2_page_focus.png","生活",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'"/>'
@@ -40,7 +40,7 @@
 			
 			
 		});
-		facesTabPanel.add("", "../css/pic/Res/AppFramework/CustomFace/StoreFace/emoji_page_focus.png","符号表情",function(parent, tabName, tabPic, titleName)
+		facesTabPanel.add("", "./css/pic/Res/AppFramework/CustomFace/StoreFace/emoji_page_focus.png","符号表情",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'" style=" margin-top: 10px;"/>'
@@ -52,7 +52,7 @@
 			
 		});
 		
-		facesTabPanel.add("", "../css/pic/Res/AppFramework/CustomFace/StoreFace/default_tab_icon_focus_0.png","我的收藏",function(parent, tabName, tabPic, titleName)
+		facesTabPanel.add("", "./css/pic/Res/AppFramework/CustomFace/StoreFace/default_tab_icon_focus_0.png","我的收藏",function(parent, tabName, tabPic, titleName)
 		{
 			
 			var tabLi = Sharp('<div class="tab_content"'+(titleName?' title="'+titleName+'"':'')+'><img class="tab_pic" src="'+ tabPic +'"/>'

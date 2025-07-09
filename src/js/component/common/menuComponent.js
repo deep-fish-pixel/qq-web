@@ -37,7 +37,7 @@ WebChat.Base.Component.extend('WebChat.Ext.Component.MenuComponent',
         Sharp.iter(menusData,function(menu)
         {
 			if(!menu)return;
-            menusStr +='<tr class="menu_select'+(menu.children? ' menu_children"':'"')+'><td class="menu_pic">'+(menu.pic?'<img src="'+menu.pic+'"/>':"")+'</td><td class="menu_text">'+menu.text+'</td><td class="menu_right">'+(menu.children?'<img src="../css/pic/Res/Mine/Arrow-right3.png"/>':'')+'</td></tr>';
+            menusStr +='<tr class="menu_select'+(menu.children? ' menu_children"':'"')+'><td class="menu_pic">'+(menu.pic?'<img src="'+menu.pic+'"/>':"")+'</td><td class="menu_text">'+menu.text+'</td><td class="menu_right">'+(menu.children?'<img src="./css/pic/Res/Mine/Arrow-right3.png"/>':'')+'</td></tr>';
 			if(menu.line)
 			{
 				menusStr +='<tr class="menu_line"><td class="menu_line_pic"></td><td class="menu_line_text"></td><td class="menu_line_right"></td></tr>';

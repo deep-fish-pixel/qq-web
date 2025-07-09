@@ -8,7 +8,7 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 	onInit:function(context, container)
 	{
 		var self = this;
-		var leftArrayPics=["../css/pic/Res/ChatFrame/aio_flexleft_normal.png","../css/pic/Res/ChatFrame/aio_flexright_normal.png"];
+		var leftArrayPics=["./css/pic/Res/ChatFrame/aio_flexleft_normal.png","./css/pic/Res/ChatFrame/aio_flexright_normal.png"];
 		this.content = Sharp('<div class="panel_content group_chart_panel_content"></div>').addTo(context);
 		this.content = Sharp('<table class="thread_column_panel"><tr class=""><td class="three_column_first_td"></td>'
 		+'<td class="three_column_second_td"><div class="chart_core_left_array_p"><img class="chart_core_left_array" src="'+leftArrayPics[0]+'" title="隐藏侧边"></div></td>'
@@ -64,23 +64,23 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 		});
 		this.fontSettingList = new WebChat.Ext.Component.PictureListComponent(Sharp('<div class="input_tools_pic_component font_set_component" parentdragable="true"></div>'), this, 
 		[
-			{title:"系统字体",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/aio_quickbar_sysfont_tab_button.png",click:function(element, obj)
+			{title:"系统字体",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/aio_quickbar_sysfont_tab_button.png",click:function(element, obj)
 				{
 				}},
-			{title:"加粗",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/Bold.png",click:function(element, obj)
+			{title:"加粗",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/Bold.png",click:function(element, obj)
 				{
 					self.container.container.container.container.editorPanel.setBold()
 				}},
-			{title:"倾斜",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/Italic.png",click:function(element, obj)
+			{title:"倾斜",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/Italic.png",click:function(element, obj)
 				{
 					
 					self.container.container.container.container.editorPanel.setItalic()
 				}},
-			{title:"下划线",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/underline.png",click:function(element, obj)
+			{title:"下划线",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/underline.png",click:function(element, obj)
 				{
 					self.container.container.container.container.editorPanel.setUnderline()
 				}},
-			{title:"颜色",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/color.png",click:function(element, obj)
+			{title:"颜色",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/MidToolbarExtUp_Font/color.png",click:function(element, obj)
 				{
 					
 					
@@ -89,7 +89,7 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 		//this.fontSettingList.hide();
 		new WebChat.Ext.Component.PictureListComponent(Sharp('<div class="input_tools_pic_component input_tools_set_component" parentdragable="true"></div>'), this, 
 		[
-			{title:"字体选择工具栏",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_font.png",click:function(element, obj)
+			{title:"字体选择工具栏",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_font.png",click:function(element, obj)
 				{
 					var font = self.fontSettingList.context;
 					//var parent = self.fontSettingList.context.parent();
@@ -120,16 +120,16 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 					}
 					
 				}},
-			{title:"选择表情",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_face.png",click:function()
+			{title:"选择表情",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_face.png",click:function()
 			{
 				//pic_text_outer_select
 				//this.fireElement.addClass("pic_text_outer_select");
 				new WebChat.Ext.Panel.FacesPanel(Sharp('<div class="faces_panel"></div>'), desk,{width:462,height:318,trigger:this.fireElement,outputPanel:self.container.container.container.container.editorPanel});
 				
 			}},
-			{title:"VIP魔法表情/超级表情/涂鸦表情/宠物炫",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_richface.png",click:function(){}},
-			{title:"多功能辅助输入",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_inputassist.png",click:function(){}},
-			{title:"发送图片",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_sendpic.png",array:"../css/pic/Res/ContactMgr/ArrowDown.png",arrayClick:function(element, data, arrayElement)
+			{title:"VIP魔法表情/超级表情/涂鸦表情/宠物炫",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_richface.png",click:function(){}},
+			{title:"多功能辅助输入",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_inputassist.png",click:function(){}},
+			{title:"发送图片",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_sendpic.png",array:"./css/pic/Res/ContactMgr/ArrowDown.png",arrayClick:function(element, data, arrayElement)
 			{
 				var menu = new WebChat.Ext.Component.MenuComponent(Sharp('<div class="component menu_component"></div>'), self, self.option.menuData.sendPic, element, 150, "pic_text_outer_select");
 				menu.setShowAndRemoveFunc(function()
@@ -141,8 +141,8 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 				});
 				menu.show();
 			},click:function(){}},
-			{title:"点歌",pic:"../css/pic/Res/AppPluginIcon/main_musicbtn20_music.png",click:function(){}},
-			{title:"屏幕截图",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_cut.png",array:"../css/pic/Res/ContactMgr/ArrowDown.png",arrayClick:function(element, data, arrayElement)
+			{title:"点歌",pic:"./css/pic/Res/AppPluginIcon/main_musicbtn20_music.png",click:function(){}},
+			{title:"屏幕截图",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_cut.png",array:"./css/pic/Res/ContactMgr/ArrowDown.png",arrayClick:function(element, data, arrayElement)
 			{
 				var menu = new WebChat.Ext.Component.MenuComponent(Sharp('<div class="component menu_component"></div>'), self, self.option.menuData.printscreen, element, 175, "pic_text_outer_select");
 				menu.setShowAndRemoveFunc(function()
@@ -154,8 +154,8 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 				});
 				menu.show();
 			},click:function(){}},
-			{title:"投票",pic:"../css/pic/Res/GroupVote/aio_quickbar_vote.png",click:function(){}},
-			{title:"接受并提示消息",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_screen1.png",click:function()
+			{title:"投票",pic:"./css/pic/Res/GroupVote/aio_quickbar_vote.png",click:function(){}},
+			{title:"接受并提示消息",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_screen1.png",click:function()
 			{
 				var menu = new WebChat.Ext.Component.MenuComponent(Sharp('<div class="component menu_component"></div>'), self, self.option.menuData.receiveAndPrompt, Sharp(this.fireElement), 175, "pic_text_outer_select");
 				menu.setShowAndRemoveFunc(function()
@@ -167,7 +167,7 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 				});
 				menu.show();
 			}},
-			{title:"显示消息记录",name:"消息记录",pic:"../css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_register.png",array:"../css/pic/Res/ContactMgr/ArrowDown.png",floatRight:true,arrayClick:function(element, data, arrayElement)
+			{title:"显示消息记录",name:"消息记录",pic:"./css/pic/Res/AppFramework/ChatFrame/MidToolbar/aio_quickbar_register.png",array:"./css/pic/Res/ContactMgr/ArrowDown.png",floatRight:true,arrayClick:function(element, data, arrayElement)
 			{
 				var menu = new WebChat.Ext.Component.MenuComponent(Sharp('<div class="component menu_component"></div>'), self, self.option.menuData.messageManage, element, 140, "pic_text_outer_select");
 				menu.setShowAndRemoveFunc(function()
@@ -187,7 +187,7 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 		
 		this.content = chartInputOperate;
 		var chartManager = this.container.container.container.container;
-		new WebChat.Ext.Component.ButtonListComponent(Sharp('<div class="button_list_component"></div>'),this,[{name:"发送(S)",array:"../css/pic/Res/ContactMgr/ArrowDown.png",floatRight:true,click:function()
+		new WebChat.Ext.Component.ButtonListComponent(Sharp('<div class="button_list_component"></div>'),this,[{name:"发送(S)",array:"./css/pic/Res/ContactMgr/ArrowDown.png",floatRight:true,click:function()
 		{
 			chartManager.send();
 		},arrayClick:function(element, data, arrayElement)
@@ -207,23 +207,23 @@ WebChat.Ext.Panel.TabContentPanel.extend('WebChat.Ext.Panel.GroupChartCorePanel'
 		this.content = this.coreLeftTableFuncTd = chartCoreLeft.find(".core_left_table_func_td");
 		this.pictureListComponent = new WebChat.Ext.Component.PictureListComponent(Sharp('<div class="group_pic_list_component" parentdragable="true"></div>'), this, 
 		[
-			{title:"相册",name:"相册",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/2_24.png",click:function(){}},
-			{title:"共享",name:"共享",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/1_24.png",click:function(){}},
-			{title:"论坛",name:"论坛",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/11_24.png",click:function(){}},
-			{title:"讨论组",name:"讨论组",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/8_24.png",click:function(){}},
-			{title:"群视频",name:"群视频",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/21_24.png",click:function(){}},
-			{title:"语音",name:"语音",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
-			{title:"投票",name:"投票",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
-			{title:"看节目",name:"看节目",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
-			{title:"签到",name:"签到",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
-			{title:"匿名聊",name:"匿名聊",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
-			{title:"听音乐",name:"听音乐",pic:"../css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}} 
+			{title:"相册",name:"相册",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/2_24.png",click:function(){}},
+			{title:"共享",name:"共享",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/1_24.png",click:function(){}},
+			{title:"论坛",name:"论坛",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/11_24.png",click:function(){}},
+			{title:"讨论组",name:"讨论组",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/8_24.png",click:function(){}},
+			{title:"群视频",name:"群视频",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/21_24.png",click:function(){}},
+			{title:"语音",name:"语音",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
+			{title:"投票",name:"投票",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
+			{title:"看节目",name:"看节目",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
+			{title:"签到",name:"签到",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
+			{title:"匿名聊",name:"匿名聊",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}},
+			{title:"听音乐",name:"听音乐",pic:"./css/pic/Res/GroupApp/DefaultAppIcons/20_24.png",click:function(){}} 
 		]);
 		this.content = chartCoreLeft.find(".core_left_table_mem_td");
 		var groupChartFriendListPanel = new WebChat.Ext.Panel.GroupChartFriendListPanel(Sharp('<div class="main_tab_group_panel noselect" id="friend_panel"></div>'), this);
 		this.groupChartFriendListPanel = groupChartFriendListPanel;
 		
-		groupChartFriendListPanel.addData([{showName:"农民1",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/1.png"},{showName:"农民2",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/2.png"},{showName:"农民3",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/5.png"},{showName:"农民4",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/33.png"},{showName:"农民5",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民6",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民7",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民8",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民9",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民10",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"},{showName:"农民11",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/3.png"},{showName:"农民12",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/16.png"},{showName:"农民13",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/25.png"},{showName:"农民14",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/43.png"},{showName:"农民15",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"../css/pic/Data/Head/49.png"}]);
+		groupChartFriendListPanel.addData([{showName:"农民工1",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/1.png"},{showName:"农民工2",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/2.png"},{showName:"农民工3",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/5.png"},{showName:"农民工4",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/33.png"},{showName:"农民工5",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工6",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工7",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工8",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工9",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工10",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"},{showName:"农民工11",nickName:"张三1",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/3.png"},{showName:"农民工12",nickName:"张三2",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/16.png"},{showName:"农民工13",nickName:"张三3",sign:"适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我,适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/25.png"},{showName:"农民工14",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/43.png"},{showName:"农民工15",nickName:"张三",sign:"适度分流家里，是否拉瑟陪我",shortPic:"./css/pic/Data/Head/49.png"}]);
 		groupChartFriendListPanel.context.scroller({dragstart:function()
 		{
 			//rightZoom.hide();
