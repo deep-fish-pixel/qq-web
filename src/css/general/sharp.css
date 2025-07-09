@@ -1,0 +1,179 @@
+body
+{
+	margin:0px;
+	margin-left:3px;
+	margin-right:6px;
+}
+.scroller
+{
+	position: absolute;
+	width: 9px;
+	border: 2px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	top:0px;
+}
+.scroller .scrollup
+{
+	width: 9px;
+	height:9px;
+	visibility:hidden;
+	opacity: 0;
+	
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+
+.scroller .uparrow
+{
+	width: 9px;
+	height:7px;
+	background:url("../pic/Res/MainPanel/FriendCircle/ArrowBottomNormal.png") no-repeat;
+}
+
+.scroller .scrollup:hover .uparrow
+{
+	outline:#7D8E98 1px solid;
+}
+
+.scroller .scrolldown
+{
+	width: 9px;
+	height:9px;
+	position: absolute;
+	bottom: 0px;
+	visibility:hidden;
+	opacity: 0;
+	
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+.scroller .downarrow
+{
+	width: 9px;
+	height: 7px;
+	background: url("../pic/Res/MainPanel/FriendCircle/ArrowTopNormal.png") no-repeat 0px 2px;
+	margin-top: 2px;
+}
+
+.scroller .scrolldown:hover .downarrow
+{
+	outline:#7D8E98 1px solid;
+}
+
+.scroller .scrollbar
+{
+	background-color: #D7DDE0;
+	width: 9px;
+	background-repeat: repeat-x;
+	border-radius: 7px;
+	-moz-border-radius: 7px; 
+	-webkit-border-radius: 7px;
+	-ms-border-radius: 7px;
+	visibility:hidden;
+	opacity: 0;
+	
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	/*border:solid #D2D9DB 1px;*/
+}
+.scroller .scrollbtn
+{
+	width: 9px;
+	height:10px;
+	background-repeat: repeat-x;
+	border-radius: 7px;
+	-moz-border-radius: 7px; 
+	-webkit-border-radius: 7px;
+	-ms-border-radius: 7px;
+	background-color:#C1C6C8;
+	position: absolute;
+	top: 0px;
+	
+	/*border:solid #616364 1px;*/
+}
+
+.scroller .scrollanimate
+{
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+.scroller .scrollanimatefast
+{
+	-webkit-transition: all 0.03s linear;
+	-moz-transition: all 0.03s linear;
+	-o-transition: all 0.03s linear;
+	-ms-transition: all 0.03s linear;
+	transition: all 0.03s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+
+.scroller:hover .scrollup, .scroller:hover .scrolldown, .scroller:hover .scrollbar
+{
+	
+	
+}
+.scroller:hover .scrollbtn
+{
+	background-color: #6C6E70;
+}
+.scroller_active .scrollup, .scroller_active .scrolldown, .scroller_active .scrollbar
+{
+	visibility: visible;
+	opacity: 1;
+	
+}
+.scroller_active .scrollbtn
+{
+	background-color: #6C6E70;
+	opacity: 1;
+	
+}
+
+
+.border_zoomer
+{
+	z-index: 9989;
+}
+.edit_content:focus, .output_content:focus
+{
+	/*margin: 0;
+	border: 0;
+	outline: 0;*/
+}

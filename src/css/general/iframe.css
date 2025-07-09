@@ -1,0 +1,35 @@
+.pic_show
+{
+}
+.pic_parent
+{
+	position: relative;
+}
+.output_content .pic_img
+{
+	max-width: 80%;
+	max-height: 50%;
+}
+.edit_content .pic_img
+{
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.pic_scale
+{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	display:none;
+	background: url(../pic/Res/AppFramework/ChatFrame/AIOZoomMask.png) no-repeat;
+}
+
+.pic_show:hover .pic_scale
+{
+	background: url(../pic/Res/AppFramework/ChatFrame/AIOZoomMask_hover.png) no-repeat;
+}
+
+

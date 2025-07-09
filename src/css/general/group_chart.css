@@ -1,0 +1,355 @@
+
+.chart_manage_group_panel
+{
+	width: 595px;
+}
+.tab_content_group_panel
+{
+	position: relative;
+	height: 40px;
+	width: 330px;
+}
+.tab_content_group_panel .panel_content_tabs
+{
+	padding-top: 6px;
+	padding-top: 7px\9;
+	-webkit-padding-before: 8px;
+	overflow: hidden;
+}
+.tab_content_group_panel .tab_content
+{
+	float:none;
+	height: 33px;
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	width:78px;
+    margin-right: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-top-left-radius: 3px;
+	-moz-border-top-right-radius: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-ms-border-top-left-radius: 3px;
+	-ms-border-top-right-radius: 3px;
+
+}
+.tab_content_group_panel .tab_content:hover
+{
+	background-color: #7ABADF;
+	background-repeat: repeat-x;
+}
+.tab_content_group_panel .tab_content_focus,.tab_content_group_panel .tab_content_focus:hover
+{
+	background-color: #93C5E4;
+	background-image: -moz-linear-gradient(#93C5E4 65%, #ffffff);
+	background-image: -webkit-linear-gradient(#93C5E4 65%, #ffffff);
+	background-image: linear-gradient(#93C5E4 65%, #ffffff);
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#93C5E4', endColorStr='#ffffff', gradientType='0');
+	background-repeat: repeat-x;
+}
+
+.tab_content_group_panel .tab_content_div
+{
+	height: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+.tab_content_group_panel .tab_pic_div
+{
+	display: inline-block;
+	height: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+	text-align: center;
+}
+.tab_content_group_panel .tab_name_div
+{
+	display: inline-block;
+	height: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.tab_content_group_panel .tab_pic
+{
+	display: inline-block;
+	margin-top: 1px;
+	margin-left: 5px;
+}
+.tab_content_group_panel .tab_name
+{
+	display: inline-block;
+	font-size: 11pt;
+	height: 40px;
+	position: relative;
+	top: -8px;
+}
+.tab_content_group_panel .down_array
+{
+	/*display: none;
+	position: absolute;*/
+}
+.tab_content_group_panel .tab_content_focus .down_array
+{
+	display: inline-block;
+	height: 38px;
+	width: 18px;
+	position: absolute;
+	visibility:hidden;
+}
+.tab_content_group_panel .tab_content_focus:hover .down_array, .tab_content_group_panel .tab_content_focus .down_array_click
+{
+	visibility: visible;
+	background-color: #3E9BCE;
+	background-image: -moz-linear-gradient(#3E9BCE, #ffffff);
+	background-image: -webkit-linear-gradient(#3E9BCE, #ffffff);
+	background-image: linear-gradient(#3E9BCE, #ffffff);
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#3E9BCE', endColorStr='#ffffff', gradientType='0');
+	background-repeat: repeat-x;
+	
+}
+.group_chart_content_panel
+{
+	width: 100%;
+	height: 100%;
+}
+.group_chart_content_panel .group_chart_panel_content
+{
+	width: 100%;
+	height: 100%;
+}
+.group_space_panel,.group_app_panel
+{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+.group_chart_content_panel .core_left_table_func_td
+{
+	background-color: #F1F7FB;
+}
+.group_chart_content_panel .chart_core_left_array_p
+{
+    position: relative;
+    width: 6px;  
+    height: 100px;
+    margin-top: -160px;
+}
+.chart_manage_group_panel .three_column_third_td, .single_chart_manage_panel .chart_manage_group_panel .three_column_third_td
+{
+	padding: 2px 4px 2px 0px;
+	width: 201px;
+}
+.single_chart_manage_panel .three_column_third_td, .chart_manage_group_panel .single_chart_manage_panel .three_column_third_td
+{
+	padding: 0px;
+	width: 147px;
+}
+
+.group_chart_content_panel .chart_core_left_array
+{
+	width: 6px;
+	height: 293px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+
+.group_chart_content_panel .chart_core_left,.single_chart_manage_panel .group_chart_content_panel .chart_core_left
+{
+	top:-222px \9;
+	border: 1px solid #A2ADB2;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2),-1px -1px 1px rgba(0,0,0,0.2);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	overflow: hidden;
+}
+
+
+
+.core_left_table
+{
+	height:436px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0px;
+}
+.core_left_table .core_left_table_func_tr
+{
+	height:180px;
+	width:100%;
+}
+.core_left_table .core_left_table_updown_tr
+{
+	height:25px;
+	width:100%;
+	background-color:#D6E7F3;
+	background-image: -moz-linear-gradient(top,#D6E7F3 10%,#E5F0F7);
+	background-image: -webkit-linear-gradient(top,#D6E7F3 10%,#E5F0F7);
+	background-image: linear-gradient(top,#D6E7F3 10%,#E5F0F7);
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#D6E7F3', endColorStr='#E5F0F7', gradientType='1');
+	
+}
+.core_left_table .core_left_table_updown_tr:hover
+{
+	background-color:#BCD8EB;
+	
+	background-image: -moz-linear-gradient(top,#BCD8EB 10%,#CBDEEA);
+	background-image: -webkit-linear-gradient(top,#BCD8EB 10%,#CBDEEA);
+	background-image: linear-gradient(top,#BCD8EB 10%,#CBDEEA);
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#BCD8EB', endColorStr='#CBDEEA', gradientType='1');
+}
+.core_left_table .core_left_table_mem_tr
+{
+	height:100%;
+	width:100%;
+	background-color:#EAF5FA;
+}
+.core_left_table >tr,.core_left_table tr >td
+{
+	border-spacing: 0px;
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0px;
+	
+}
+.core_left_table  .core_left_table_mem_td
+{
+	float: left;
+}
+
+.core_left_table_mem_td .main_tab_group_panel
+{
+	width: 195px;
+	height: 232px;
+	position: relative;
+	background-color: #EAF5FA;
+}
+
+.core_left_table_mem_td .main_tab_content_group
+{
+	
+}
+
+.core_left_table_mem_td .group_list_component  .list_item_tr {
+	height: 28px;
+	line-height: 27px;
+	border-top: 1px solid #EAF5FA;
+}
+
+.core_left_table_mem_td .group_list_component .item_selected,
+.core_left_table_mem_td .group_list_component .list_item_tr:hover
+{
+    background-color:#3E95D9;
+	color:#FFF;
+	background-image: -moz-linear-gradient(#3E95D9,#3186C8);
+	background-image: -webkit-linear-gradient(#3E95D9,#3186C8);
+	background-image: linear-gradient(#3E95D9,#3186C8);
+	background-repeat: repeat-x;
+}
+
+.core_left_table_mem_td .group_list_component .list_item_tr:hover .group_nickname,
+.core_left_table_mem_td .group_list_component .item_selected .group_nickname
+{
+	color: #F2F2F2;
+	
+}
+
+.core_left_table_mem_td .group_list_component .group_nickname {
+	display: inline-block;
+}
+.core_left_table_up_td{
+	
+}
+.core_left_table_updown_td .core_left_table_updown div{
+	display: inline-block;
+}
+.core_left_table_updown_td .clazz_info_div{
+	width:100px;
+	float: left;
+	margin-top: 2px;
+	padding-left: 4px;
+}
+.core_left_table_updown_td .arrow_clazz_div{
+	width: 25px;
+	height: 20px;
+}
+.core_left_table_updown_td .arrow_clazz_search{
+	width:20px;
+	height: 20px;
+	float:right;
+}
+.core_left_table_updown_td .core_left_table_updown .arrow_clazz_pic
+{
+	width:20px;
+	height: 20px;
+	opacity:0;	
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+.core_left_table_updown_td .core_left_table_updown:hover .arrow_clazz_pic
+{
+	opacity:1;	
+	background:url(../pic/Res/AppFramework/SelectContact/list_up.png) no-repeat;
+	
+}
+.core_left_table_updown_td .core_left_table_up:hover .arrow_clazz_pic
+{
+	opacity:1;
+	background:url(../pic/Res/AppFramework/SelectContact/list_down.png) no-repeat;
+}
+
+.core_left_table_updown_td .arrow_clazz_search_pic
+{
+	width:20px;
+	height: 20px;
+	background:url(../pic/Themes/Default/MainPanel/search/main_search_normal.png) no-repeat;
+}
+
+.chart_panel_merge .group_chart_content_panel  .three_column_third_td, 
+.chart_panel_merge .group_chart_content_panel  .chart_core_left
+{
+	width: 165px;
+}
+
+.chart_panel_merge .core_left_table_func_tr
+{
+	height: 110px;
+	overflow: hidden;
+}
+.chart_panel_merge .core_left_table_func_tr .group_pic_list_component
+{
+	height: 110px;
+	overflow: hidden;
+}
+.chart_panel_merge .group_pic_list_component .pic_text_outer
+{
+	height: 36px;
+	width: 38px;
+	overflow: hidden;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

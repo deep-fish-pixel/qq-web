@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>web聊天器</title>
+<link rel="stylesheet" type="text/css" href="css/general/sharp.css">
+<link rel="stylesheet" type="text/css" href="css/general/main.css">
+<link rel="stylesheet" type="text/css" href="css/general/task.css">
+<link rel="stylesheet" type="text/css" href="css/general/main_tab_group.css">
+<link rel="stylesheet" type="text/css" href="css/general/panel.css">
+<link rel="stylesheet" type="text/css" href="css/general/chart.css">
+<link rel="stylesheet" type="text/css" href="css/general/group_chart.css">
+<link rel="stylesheet" type="text/css" href="css/general/component.css">
+<link rel="stylesheet" type="text/css" href="css/general/iframe.css">
+<!--库和基础类-->
+<script type="text/javascript" src="js/lib/sharp.js"></script>
+<script type="text/javascript" src="js/lib/class.js"></script>
+<script type="text/javascript" src="js/lib/util.js"></script>
+<script type="text/javascript" src="js/base/unit.js"></script>
+<script type="text/javascript" src="js/base/desk.js"></script>
+<script type="text/javascript" src="js/base/panel.js"></script>
+<script type="text/javascript" src="js/base/component.js"></script>
+
+<!--对象库-->
+<script type="text/javascript" src="js/object/taskInfo.js"></script>
+
+<!--部件库-->
+<script type="text/javascript" src="js/component/common/buttonComponent.js"></script>
+<script type="text/javascript" src="js/component/common/buttonListComponent.js"></script>
+<script type="text/javascript" src="js/component/common/menuComponent.js"></script>
+<script type="text/javascript" src="js/component/common/headerOperateComponent.js"></script>
+<script type="text/javascript" src="js/component/common/pictureListComponent.js"></script>
+<script type="text/javascript" src="js/component/common/listComponent.js"></script>
+
+
+<script type="text/javascript" src="js/component/mainPanel/mainFooterComponent.js"></script>
+<script type="text/javascript" src="js/component/mainPanel/mainHeaderComponent.js"></script>
+<script type="text/javascript" src="js/component/singleChart/figureComponent.js"></script>
+<script type="text/javascript" src="js/component/task/taskListComponent.js"></script>
+
+<!--面板库-->
+<script type="text/javascript" src="js/panel/common/tabPanel.js"></script>
+<script type="text/javascript" src="js/panel/common/tabContentPanel.js"></script>
+<script type="text/javascript" src="js/panel/common/framePanel.js"></script>
+<script type="text/javascript" src="js/panel/common/loginFramePanel.js"></script>
+<script type="text/javascript" src="js/panel/common/scalePicPanel.js"></script>
+
+<script type="text/javascript" src="js/panel/mainPanel/mainPanel.js"></script>
+<script type="text/javascript" src="js/panel/mainPanel/mainTabPanel.js"></script>
+<script type="text/javascript" src="js/panel/mainPanel/mainTabContentFriendPanel.js"></script>
+<script type="text/javascript" src="js/panel/mainPanel/mainTabContentGroupPanel.js"></script>
+
+<script type="text/javascript" src="js/panel/singleChart/chart.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/chartFriendTabPanel.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/chartPanelManage.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/chartTabContentPanel.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/singleChartManage.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/editorPanel.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/outputPanel.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/facesPanel.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/facesTabPanel.js"></script>
+<script type="text/javascript" src="js/panel/singleChart/facesTabContentPanel.js"></script>
+
+<script type="text/javascript" src="js/panel/groupChart/groupChartCorePanel.js"></script>
+<script type="text/javascript" src="js/panel/groupChart/groupContentTabPanel.js"></script>
+<script type="text/javascript" src="js/panel/groupChart/chartTabContentGroupPanel.js"></script>
+<script type="text/javascript" src="js/panel/groupChart/groupChartManage.js"></script>
+<script type="text/javascript" src="js/panel/groupChart/groupChartFriendListPanel.js"></script>
+
+<script type="text/javascript" src="js/panel/task/taskManagePanel.js"></script>
+
+
+</head>
+<body id="a1">
+<div id="desk"> </div>
+
+</body>
+<script type="text/javascript">
+var globalSettings={statusSetting:{},serviceSetting:{},friendSetting:{showBigHeader:false,selectedShowBigHeader:false,selectedShowBigPic:true},groupSetting:{showBigHeader:false,selectedShowBigHeader:false,selectedShowBigPic:true}};
+var desk = new WebChat.Base.Desk(Sharp("#desk"));
+
+
+</script>
+
+</html>
